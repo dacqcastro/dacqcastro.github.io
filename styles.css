@@ -202,7 +202,19 @@ header nav a:hover{
   width: 100%;
   text-align: center;
   height: 100%;
-  padding: 16em 0 0 0;
+  padding: 2em 0 0 0;
+}
+
+#introduction #cartoonPortrait {
+  padding-top: 10em;
+}
+
+#introduction #portrait {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* About section */
