@@ -281,14 +281,14 @@ header nav a:hover{
 
 /* Skill section */
 #skills .language-icon img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 #skills .language-icon {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: auto;
   border: 3px solid #606060;
   border-radius: 50%;
   padding: 16px;
@@ -304,7 +304,8 @@ header nav a:hover{
 }
 
 #skills .icon-container {
-  width: 88px;
+  width: auto;
+  height: auto;
   border: 3px solid #fff;
   border-radius: 10px;
   padding: 10px 50px  ;
