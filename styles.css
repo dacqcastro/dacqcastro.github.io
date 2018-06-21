@@ -249,15 +249,21 @@ header nav a:hover{
   padding-bottom: 5em;
 }
 
+#projects .opac{
+  transition: .3s;
+}
+
 #projects .projects-images img{
   display: block;
   width: 80%;
   margin: 0 auto;
-  opacity: 0.4;
-  transition: .5s;
 }
 
-#projects .projects-images img:hover{
+#projects .projects-images:hover > .opac {
+  opacity: 0.4;
+}
+
+#projects .projects-images .opac:hover {
   opacity: 1;
 }
 
@@ -274,3 +280,72 @@ header nav a:hover{
 }
 
 /* Skill section */
+#skills .language-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+#skills .language-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #606060;
+  border-radius: 50%;
+  padding: 16px;
+  background-color: #fff/*#efefef*/;
+  overflow: hidden;
+}
+
+#skills .language-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 40px 0;
+}
+
+#skills .icon-container {
+  width: 88px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  padding: 10px 50px  ;
+  background-color: #fff;
+  box-shadow: 0 3px 10px 1px #aaa;
+}
+
+#skills .icon-container .bar-border {
+  height: 14px;
+  border: 3px solid #606060;
+  margin-top: 10px;
+}
+
+#skills .icon-container .bar-border p {
+  height: 100%;
+  background-color: #00ea00;
+  margin: 0;
+}
+
+/* Progress Bars */
+
+#skills #html5 {
+  width: 95%;
+}
+
+#skills #css3 {
+  width: 95%;
+}
+
+#skills #javascript {
+  width: 88%;
+}
+
+#skills #react {
+  width: 70%;
+}
+
+#skills #bootstrap {
+  width: 80%;
+}
+
+#skills #jquery {
+  width: 30%;
+}
