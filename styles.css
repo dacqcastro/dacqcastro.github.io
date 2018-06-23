@@ -444,16 +444,14 @@ footer .footer-logo img {
   width: 80%;
   margin: 30px auto;
   padding: 20px;
-  border-color: var(--darkBGColor);
-  border: 2px;
-  border-style: solid;
+  border: 2px solid var(--darkBGColor);
   outline: none;
   border-radius: 20px;
 }
 
 #contact-page .message {
   resize: none;
-  border: 2px solid;
+  border: 2px solid var(--darkBGColor);
 }
 
 #contact-page #submit-button {
