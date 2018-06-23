@@ -356,7 +356,11 @@ header nav a:hover{
 
 /* Contact me button */
 
-#skills #contact-me-button button {
+#skills #contact-me-button a, #contact-page #submit-button a {
+  text-decoration: none;
+}
+
+#skills #contact-me-button button, #contact-page #submit-button button {
   display: block;
   margin: 100px auto 0 auto;
   border: 2px solid #ff7c7c;
@@ -367,7 +371,7 @@ header nav a:hover{
   border-radius: 20px;
 }
 
-#skills #contact-me-button button:hover {
+#skills #contact-me-button button:hover, #contact-page #submit-button button:hover {
   box-shadow: 0 2px 6px 1px #ff7c7c;
   background-color: #fff;
   color: #ff7c7c;
@@ -379,9 +383,11 @@ header nav a:hover{
 footer {
   width: 100%;
   height: auto;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: var(--lightBGColor);
   overflow: hidden;
+  position: relative;
+  bottom: 0;
 }
 
 footer .inner-footer {
@@ -404,4 +410,51 @@ footer .footer-logo {
 footer .footer-logo img {
   width: 80px;
   float: left;
+}
+
+/* Contact page styles */
+#contact-page {
+  display: block;
+  width: 100%;
+  padding-top: 4em;
+  background-image: url("images/design.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40em;
+}
+
+#contact-page .contact-page-title {
+  width: 100%;
+  margin: 40px 0;
+}
+
+#contact-page .contact-page-title h2, #contact-page .contact-page-title h4 {
+  margin: 0;
+  text-align: center;
+}
+
+#contact-page .contact-page-input {
+  display: block;
+  width: 100%;
+}
+
+#contact-page .inp {
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-color: var(--darkBGColor);
+  border-style: solid;
+  outline: none;
+  border-radius: 20px;
+}
+
+#contact-page .message {
+  resize: none;
+  border: 2px solid;
+}
+
+#contact-page #submit-button {
+  padding-bottom: 80px;
 }
