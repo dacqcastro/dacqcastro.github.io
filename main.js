@@ -11,10 +11,12 @@ menuButton.addEventListener("click", function(){
   },500);
 });
 
-closeBtn.addEventListener("click", function(){
+closeBtn.addEventListener("click", function(e){
   mobileMenuScreen.style.width = "0";
   mobileMenu.style.bottom = "100%";
   closeBtn.style.display = "none";
+
+  e.preventDefault();
 });
 
 window.addEventListener("click", function(e){
@@ -24,3 +26,18 @@ window.addEventListener("click", function(e){
     closeBtn.style.display = "none";
   }
 });
+
+
+$(document).ready(function(){
+
+  var scrollLink = $(".scroll");
+
+  // Smooth scrolling
+  scrollLink.click(function(e){
+    e.preventDefault();
+    $("body,html").animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000)
+  })
+
+})

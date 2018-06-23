@@ -93,7 +93,7 @@ header .mobile-menu{
 
 header .mobile-menu-screen{
   position: fixed;
-  z-index: 99;
+  z-index: 999;
   top: 0;
   right: 0;
   width: 0;
@@ -352,4 +352,56 @@ header nav a:hover{
 
 #skills #jquery {
   width: 30%;
+}
+
+/* Contact me button */
+
+#skills #contact-me-button button {
+  display: block;
+  margin: 100px auto 0 auto;
+  border: 2px solid #ff7c7c;
+  color: #fff;
+  font-size: 20px;
+  background-color: #ff7c7c;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#skills #contact-me-button button:hover {
+  box-shadow: 0 2px 6px 1px #ff7c7c;
+  background-color: #fff;
+  color: #ff7c7c;
+  cursor: pointer;
+}
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background-color: var(--lightBGColor);
+  overflow: hidden;
+}
+
+footer .inner-footer {
+  width: 400px;
+  margin: 0 auto;
+}
+
+footer .footer-text {
+  text-align: center;
+  color: var(--darkBGColor);
+  width: 70%;
+  float: left;
+}
+
+footer .footer-logo {
+  width: 30%;
+  float: left;
+}
+
+footer .footer-logo img {
+  width: 80px;
+  float: left;
 }

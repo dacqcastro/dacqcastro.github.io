@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header id="header">
         <div class="header-container">
           <div class="logo">
-            <a href="#"><img src="images/logo.png" alt="Logo"></a>
+            <a href="#introduction" class="scroll"><img src="images/logo.png" alt="Logo"></a>
           </div>
           <nav>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about" class="scroll">About</a></li>
+              <li><a href="#projects" class="scroll">Projects</a></li>
+              <li><a href="#skills" class="scroll">Skills</a></li>
             </ul>
           </nav>
           <div class="small-screen-nav">
@@ -28,9 +29,9 @@
           <div class="mobile-menu">
             <div class="mobile-menu-screen">
               <ul>
-                <li id="first-li"><a href="#">about</a></li>
-                <li id="first-li"><a href="#">projects</a></li>
-                <li id="first-li"><a href="#">contact</a></li>
+                <li id="first-li"><a href="#about" class="scroll">about</a></li>
+                <li id="first-li"><a href="#projects" class="scroll">projects</a></li>
+                <li id="first-li"><a href="#skills" class="scroll">Skills</a></li>
                 <li id="second-li">
                   <ul>
                     <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
@@ -162,9 +163,24 @@
               </div>
             </div>
           </div>
+
+          <div id="contact-me-button">
+            <button type="button">Contact me</button>
+          </div>
         </div>
       </section>
 
+      <footer>
+        <div class="inner-footer">
+          <div class="footer-text">
+            <p>© Created by Diego Castro</p>
+            <p>with pure css and javascript</p>
+          </div>
+          <div class="footer-logo">
+            <a href="#introduction" class="scroll"><img src="images/logo.png" alt="Logo"></a>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script type="text/javascript" src="main.js"></script>
