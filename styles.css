@@ -445,6 +445,7 @@ footer .footer-logo img {
   margin: 30px auto;
   padding: 20px;
   border-color: var(--darkBGColor);
+  border: 2px;
   border-style: solid;
   outline: none;
   border-radius: 20px;
