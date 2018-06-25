@@ -467,3 +467,42 @@ footer .footer-logo img {
 #contact-page #submit-button {
   padding-bottom: 80px;
 }
+
+/* Restaurant page styles */
+
+#restaurant-page {
+  display: block;
+  width: 100%;
+  padding-top: 4em;
+  background-image: url("images/design.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40em;
+}
+
+#restaurant-page p {
+  margin: 0;
+  padding: 10px;
+  border-color: #fff;
+}
+
+#restaurant-page .restaurant-page-image img {
+  width: 100%;
+  margin: 40px 0;
+}
+
+#restaurant-page .restaurant-page-container {
+  padding: 0 40px;
+}
+
+/* Paperpillar page styles */
+
+#paperpillar-page {
+  display: block;
+  width: 100%;
+  padding-top: 4em;
+  background-image: url("images/design.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40em;
+}
