@@ -468,9 +468,9 @@ footer .footer-logo img {
   padding-bottom: 80px;
 }
 
-/* Restaurant page styles */
+/* projects page styles */
 
-#restaurant-page {
+#project-page {
   display: block;
   width: 100%;
   padding-top: 4em;
@@ -480,29 +480,32 @@ footer .footer-logo img {
   background-size: 40em;
 }
 
-#restaurant-page p {
+#project-page .project-page-info {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #aaa;
+  margin: 0 auto;
+}
+
+#project-page .project-page-info p {
   margin: 0;
-  padding: 10px;
-  border-color: #fff;
 }
 
-#restaurant-page .restaurant-page-image img {
+#project-page .project-page-image {
   width: 100%;
-  margin: 40px 0;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
 }
 
-#restaurant-page .restaurant-page-container {
-  padding: 0 40px;
-}
-
-/* Paperpillar page styles */
-
-#paperpillar-page {
-  display: block;
+#project-page .project-page-image img {
   width: 100%;
-  padding-top: 4em;
-  background-image: url("images/design.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 40em;
+}
+
+#project-page .project-page-container {
+  width: 100%;
+  padding: 0 40px 40px 40px;
+  box-sizing: border-box;
 }
