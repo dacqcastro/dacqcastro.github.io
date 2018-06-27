@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", function(e){
   mobileMenuScreen.style.width = "0";
   mobileMenu.style.bottom = "100%";
   closeBtn.style.display = "none";
-  
+
   e.preventDefault();
 });
 
@@ -40,4 +40,5 @@ $(document).ready(function(){
       scrollTop: $(this.hash).offset().top
     }, 1000)
   })
+
 })
