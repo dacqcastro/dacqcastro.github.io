@@ -27,7 +27,7 @@ window.addEventListener("click", function(e){
 
 // Smooth scrolling using Jquery
 
-$(document).ready(function(e){
+$(document).ready(function(){
 
   var scrollLink = $(".scroll");
 
@@ -38,7 +38,4 @@ $(document).ready(function(e){
       scrollTop: $(this.hash).offset().top
     }, 1000)
   })
-  
-  e.preventDefault;
-
 })
