@@ -68,7 +68,6 @@ header{
   height: 4em;
   padding: 0;
   overflow: hidden;
-  position: absolute;
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -189,7 +188,7 @@ header nav{
 
 header nav li {
   vertical-align: middle;
-  line-height: 4em;
+  line-height: 6em;
   padding-left: 2em;
   display: inline-block;
   list-style: none;
@@ -200,12 +199,12 @@ header nav a{
   text-decoration: none;
   color: var(--darkBGColor);
   padding: 4px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
 }
 
 header nav a:hover{
-  color: #000;
-  border-color: #000;
+  color: var(--darkBGColor);
+  border-color: var(--darkBGColor);
 }
 
 /* Introduction section */
@@ -527,4 +526,34 @@ footer .footer-logo img {
 #project-page .btn {
   display: inline-block;
   margin: 5px 5px 0 5px;
+}
+
+/* Media queries */
+
+@media (min-width: 500px) {
+  header {
+    height: 6em;
+  }
+
+  header nav{
+    display: block;
+  }
+
+  header .small-screen-nav{
+    display: none;
+  }
+
+  header .logo img{
+    width: 80px;
+  }
+
+  /* Projects images */
+
+  #projects .projects-images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #skills .language-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
