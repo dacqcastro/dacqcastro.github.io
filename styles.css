@@ -215,7 +215,7 @@ header nav a:hover{
   width: 100%;
   height: 100vh;
   background-color: var(--lightBGColor);
-  background-image: url("images/computerBG.jpg");
+  background-image: url("images/blurBG.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -275,9 +275,21 @@ header nav a:hover{
 #projects .projects-images{
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
+}
+
+#projects .project-caption {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  transition: .3s;
+  z-index: -1;
+  font-weight: bold;
 }
 
 #projects .image{
+  position: relative;
   padding-bottom: 5em;
 }
 
@@ -297,6 +309,12 @@ header nav a:hover{
 
 #projects .projects-images .opac:hover {
   opacity: 1;
+}
+
+#projects .projects-images .opac:hover > .project-caption {
+  top: -50px;
+  opacity: 1;
+  z-index: 1;
 }
 
 #projects{
@@ -606,7 +624,7 @@ footer .footer-icons p a {
   }
 
   #introduction{
-    background-size: 100%;
+    background-size: 100% 100%;
   }
 
   /* Skills grid */
