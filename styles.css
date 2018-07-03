@@ -256,16 +256,20 @@ header nav a:hover{
 #about, #skills{
   height: auto;
   padding: 6em 0;
+  background-image: url("images/design.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40em;
 }
 
 /* Projects section */
 
 #projects{
   background-color: var(--lightBGColor);
-  background-image: url("images/design.png");
+  /* background-image: url("images/design.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 40em;
+  background-size: 40em; */
 }
 
 #projects .inner-container{
@@ -549,6 +553,7 @@ footer .footer-icons p a {
 
 #project-page .project-page-image img {
   width: 100%;
+  border-radius: 20px;
 }
 
 #project-page .project-page-container {
@@ -593,7 +598,7 @@ footer .footer-icons p a {
 
   /* Projects images */
 
-  #projects .projects-images{
+  #projects .projects-images {
     grid-template-columns: repeat(2, 1fr);
   }
 
