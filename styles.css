@@ -266,10 +266,6 @@ header nav a:hover{
 
 #projects{
   background-color: var(--lightBGColor);
-  /* background-image: url("images/design.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 40em; */
 }
 
 #projects .inner-container{
@@ -284,14 +280,8 @@ header nav a:hover{
   text-align: center;
 }
 
-#projects .project-caption {
-  opacity: 0;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  transition: .3s;
-  z-index: -1;
-  font-weight: bold;
+#projects .project-grid {
+  display: none;
 }
 
 #projects .image{
@@ -299,32 +289,10 @@ header nav a:hover{
   padding-bottom: 5em;
 }
 
-#projects .opac{
-  transition: .3s;
-}
-
 #projects .projects-images img{
   display: block;
   width: 80%;
   margin: 0 auto;
-}
-
-#projects .projects-images:hover > .opac {
-  opacity: 0.4;
-}
-
-#projects .projects-images .opac:hover {
-  opacity: 1;
-}
-
-#projects .projects-images .opac:hover > .project-caption {
-  top: -50px;
-  opacity: 1;
-  z-index: 1;
-}
-
-#projects{
-  background-color: var(--lightBGColor);
 }
 
 #projects .title{
@@ -599,11 +567,88 @@ footer .footer-icons p a {
   /* Projects images */
 
   #projects .projects-images {
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
   }
 
-  #project-page {
-    padding-top: 6em;
+  #projects .project-grid .image1 {
+    background-image: url("images/evernotePic.png");
+    background-size: auto 100%;
+    background-position: left;
+    grid-area: image1;
+  }
+
+  #projects .project-grid .image2 {
+    background-image: url("images/footlockerPic.png");
+    background-size: 100%;
+    background-position: top;
+    grid-area: image2;
+  }
+
+  #projects .project-grid .image3 {
+    background-image: url("images/restaurantPic.png");
+    background-size: auto;
+    background-position: center;
+    grid-area: image3;
+  }
+
+  #projects .project-grid .image4 {
+    background-image: url("https://images.pexels.com/photos/21787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350");
+    background-size: auto 100%;
+    background-position: center;
+    grid-area: image4;
+  }
+
+  #projects .project-grid .image5 {
+    background-image: url("images/paperpillarPic.png");
+    background-size: 100%;
+    background-position: center;
+    grid-area: image5;
+  }
+
+  #projects .project-grid {
+    width: 100%;
+    height: 540px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 300px auto 220px;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-areas:
+      'image1 image2 image2'
+      'image1 image3 image4'
+      'image5 image5 image4';
+  }
+
+  #projects .project-grid .pic:hover {
+    cursor: pointer;
+  }
+
+  #projects .project-grid .hover-effect {
+    width: 100%;
+    height:  0;
+    color: #fff;
+    background-color: rgba(255, 124, 124, 0.8);
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  #projects .project-grid .hover-effect p {
+    font-weight: bold;
+    font-size: 30px;
+    width: auto;
+    position: relative;
+    margin: 0;
+    display: none;
+  }
+
+  #projects .project-grid .pic:hover > .hover-effect {
+    height: 100%;
+  }
+
+  #projects .project-grid .pic:hover > .hover-effect p {
+    display: block;
   }
 
   /* Skills images */
