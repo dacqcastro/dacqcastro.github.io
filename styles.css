@@ -571,9 +571,9 @@ footer .footer-icons p a {
   }
 
   #projects .project-grid .image1 {
-    background-image: url("images/evernotePic.png");
+    background-image: url("images/SurfGuide.png");
     background-size: auto 100%;
-    background-position: left;
+    background-position: top;
     grid-area: image1;
   }
 
@@ -592,16 +592,16 @@ footer .footer-icons p a {
   }
 
   #projects .project-grid .image4 {
-    background-image: url("images/SurfGuide.png");
+    background-image: url("images/paperpillarPic.png");
     background-size: auto 100%;
     background-position: top;
     grid-area: image4;
   }
 
   #projects .project-grid .image5 {
-    background-image: url("images/paperpillarPic.png");
+    background-image: url("images/evernotePic.png");
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     grid-area: image5;
   }
 
