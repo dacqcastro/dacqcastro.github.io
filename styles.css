@@ -594,7 +594,7 @@ footer .footer-icons p a {
   #projects .project-grid .image4 {
     background-image: url("images/paperpillarPic.png");
     background-size: auto 100%;
-    background-position: center;
+    background-position: top;
     grid-area: image4;
   }
 
